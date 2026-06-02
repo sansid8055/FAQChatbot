@@ -1,0 +1,1 @@
+Orchestrates a closed-loop Retrieval-Augmented Generation system by synchronizing scheduled data ingestion, safety-gated query runtime, and a Next.js client through shared vector storage and API contracts.

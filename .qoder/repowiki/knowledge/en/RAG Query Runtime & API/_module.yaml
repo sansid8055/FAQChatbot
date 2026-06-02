@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: runtime
+title: RAG Query Runtime & API
+scope:
+    - runtime/
+source_files: []
+depends_on: []
+related_to:
+    - path: ingest
+    - path: web

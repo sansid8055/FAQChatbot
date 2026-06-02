@@ -1,0 +1,4 @@
+- Built on Next.js 16 App Router with a single-page layout (`app/layout.tsx`) and root page (`app/page.tsx`) composing the main UI.
+- Component-driven architecture in `components/` featuring a central `ChatApp` orchestrator that manages thread state, message history, and API interactions via `lib/api.ts`.
+- Separation of concerns with `lib/types.ts` defining shared TypeScript interfaces for API responses (threads, messages) and `lib/api.ts` handling HTTP communication with the backend FastAPI service.
+- UI is structured into three main panels: `ThreadRail` for conversation history, `ChatMainPanel` for message display and composition, and `SchemeSnapshot` for context-specific data.

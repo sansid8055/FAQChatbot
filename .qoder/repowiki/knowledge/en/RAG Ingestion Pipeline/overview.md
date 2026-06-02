@@ -1,0 +1,1 @@
+Executes a four-stage pipeline to scrape, normalize, chunk, embed, and index financial scheme data into a local Chroma vector store.

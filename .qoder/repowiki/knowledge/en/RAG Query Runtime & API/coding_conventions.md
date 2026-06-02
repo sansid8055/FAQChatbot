@@ -1,0 +1,3 @@
+- Each phase defines a `pipeline.py` or `app.py` as the primary entry point, with supporting logic split into specialized modules like `config.py`, `types.py`, and feature-specific helpers.
+- Configuration values are centralized in `config.py` files within each phase, reading from environment variables with sensible defaults for paths and model parameters.
+- Data structures are strictly typed using `dataclasses` or `TypedDict` defined in `types.py` modules, ensuring consistent data flow between retrieval, generation, and API layers.

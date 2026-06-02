@@ -1,0 +1,4 @@
+- Each phase implements a `discover_latest_*_run` utility to automatically resolve the most recent valid input directory if a specific `run_id` is not provided.
+- Every phase generates a JSON manifest file (e.g., `manifest.json`, `normalize_manifest.json`) to record execution metadata, status, and file paths for downstream consumption.
+- Configuration defaults are encapsulated in phase-specific `config.py` files, allowing overrides through prefixed environment variables (e.g., `INGEST_RAW_DIR`).
+- CLI entry points consistently use `load_repo_dotenv()` at startup to inject repository-level environment variables before executing phase logic.

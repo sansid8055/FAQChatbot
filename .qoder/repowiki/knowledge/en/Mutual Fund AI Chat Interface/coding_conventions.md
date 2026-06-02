@@ -1,0 +1,4 @@
+- All interactive components use the 'use client' directive to enable client-side state management and effects.
+- API calls are centralized through a generic `apiJson<T>` helper in `lib/api.ts` that handles JSON serialization, error parsing, and base URL resolution.
+- Component props are defined using explicit TypeScript `type` or `interface` definitions for clarity and type safety.
+- State management in complex components like `ChatApp` relies on `useState` and `useCallback` hooks to optimize re-renders and handle async operations.

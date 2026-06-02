@@ -1,0 +1,3 @@
+- Phase-based modularization using numeric prefixes (e.g., `phase_4_0_`, `phase_5_`) to enforce execution order and architectural layering.
+- Uniform CLI entry points via `__main__.py` in each phase module, enabling direct execution with `python -m <module_path>`.
+- Shared Pydantic-like `types.py` modules within each phase to define strict data contracts for inter-stage communication.

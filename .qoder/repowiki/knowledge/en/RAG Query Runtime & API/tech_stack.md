@@ -1,0 +1,1 @@
+Uses Groq API for LLM inference via `groq` client, ChromaDB for vector retrieval, and FastAPI for the HTTP server. Persistence is handled by SQLite with WAL mode enabled.

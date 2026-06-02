@@ -1,0 +1,1 @@
+A Next.js client application providing an AI-powered chat interface for querying mutual fund scheme documents with thread management and source verification.

@@ -1,0 +1,212 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: en-US
+branch: Q0DeR-MaG1C-BrAnCh-Fo2-NoN-GiT-Or-No-C0MmIt
+exported_at: "2026-06-02T17:57:47Z"
+modules:
+    "":
+        dir_name: Mutual Fund RAG Platform
+        title: Mutual Fund RAG Platform
+        scope:
+            - README.md
+            - .gitignore
+            - pyproject.toml
+            - requirements.txt
+            - docs/
+            - scripts/
+            - .env
+            - .env.example
+            - .github\workflows\ingest.yml
+            - data\chroma\.gitkeep
+            - data\chroma\12f95de5-a0ec-469f-988a-6c1019bb5813\data_level0.bin
+            - data\chroma\12f95de5-a0ec-469f-988a-6c1019bb5813\header.bin
+            - data\chroma\12f95de5-a0ec-469f-988a-6c1019bb5813\length.bin
+            - data\chroma\12f95de5-a0ec-469f-988a-6c1019bb5813\link_lists.bin
+            - data\chroma\chroma.sqlite3
+            - data\chroma\index_manifest.json
+            - data\chunked\.gitkeep
+            - data\chunked\20260602T164519\chroma_index_manifest.json
+            - data\chunked\20260602T164519\chunk_run_manifest.json
+            - data\chunked\20260602T164519\chunks.jsonl
+            - data\chunked\20260602T164519\embeddings.jsonl
+            - data\logs\.gitkeep
+            - data\normalized\.gitkeep
+            - data\normalized\20260602T164519\hdfc-elss-tax-saver-fund-direct-plan-growth.txt
+            - data\normalized\20260602T164519\hdfc-equity-fund-direct-growth.txt
+            - data\normalized\20260602T164519\hdfc-focused-fund-direct-growth.txt
+            - data\normalized\20260602T164519\hdfc-large-cap-fund-direct-growth.txt
+            - data\normalized\20260602T164519\hdfc-mid-cap-fund-direct-growth.txt
+            - data\normalized\20260602T164519\normalize_manifest.json
+            - data\normalized\20260602T164519\scheme_facts.json
+            - data\raw\.gitkeep
+            - data\raw\20260602T164519\amc.txt
+            - data\raw\20260602T164519\hdfc-elss-tax-saver-fund-direct-plan-growth.html
+            - data\raw\20260602T164519\hdfc-equity-fund-direct-growth.html
+            - data\raw\20260602T164519\hdfc-focused-fund-direct-growth.html
+            - data\raw\20260602T164519\hdfc-large-cap-fund-direct-growth.html
+            - data\raw\20260602T164519\hdfc-mid-cap-fund-direct-growth.html
+            - data\raw\20260602T164519\manifest.json
+            - data\threads\.gitkeep
+            - docs\chunking-embedding-architecture.md
+            - docs\deployment-plan.md
+            - docs\edgecase.md
+            - docs\problemStatement.md
+            - docs\rag-architecture.md
+            - ingest\README.md
+            - ingest\__init__.py
+            - ingest\phases\__init__.py
+            - ingest\phases\phase_4_0_scheduler_scraping\README.md
+            - ingest\phases\phase_4_0_scheduler_scraping\__init__.py
+            - ingest\phases\phase_4_0_scheduler_scraping\__main__.py
+            - ingest\phases\phase_4_0_scheduler_scraping\config.py
+            - ingest\phases\phase_4_0_scheduler_scraping\scraper.py
+            - ingest\phases\phase_4_0_scheduler_scraping\types.py
+            - ingest\phases\phase_4_1_normalize\README.md
+            - ingest\phases\phase_4_1_normalize\__init__.py
+            - ingest\phases\phase_4_1_normalize\__main__.py
+            - ingest\phases\phase_4_1_normalize\config.py
+            - ingest\phases\phase_4_1_normalize\facts.py
+            - ingest\phases\phase_4_1_normalize\html_fallback.py
+            - ingest\phases\phase_4_1_normalize\next_data.py
+            - ingest\phases\phase_4_1_normalize\normalize.py
+            - ingest\phases\phase_4_1_normalize\text_builder.py
+            - ingest\phases\phase_4_1_normalize\types.py
+            - ingest\phases\phase_4_2_chunk_embedding\README.md
+            - ingest\phases\phase_4_2_chunk_embedding\__init__.py
+            - ingest\phases\phase_4_2_chunk_embedding\__main__.py
+            - ingest\phases\phase_4_2_chunk_embedding\config.py
+            - ingest\phases\phase_4_2_chunk_embedding\embed_local.py
+            - ingest\phases\phase_4_2_chunk_embedding\markdown_segments.py
+            - ingest\phases\phase_4_2_chunk_embedding\pack_chunks.py
+            - ingest\phases\phase_4_2_chunk_embedding\pipeline.py
+            - ingest\phases\phase_4_2_chunk_embedding\tokenizer.py
+            - ingest\phases\phase_4_2_chunk_embedding\types.py
+            - ingest\phases\phase_4_3_vector_index\README.md
+            - ingest\phases\phase_4_3_vector_index\__init__.py
+            - ingest\phases\phase_4_3_vector_index\__main__.py
+            - ingest\phases\phase_4_3_vector_index\chroma_client_factory.py
+            - ingest\phases\phase_4_3_vector_index\config.py
+            - ingest\phases\phase_4_3_vector_index\pipeline.py
+            - ingest\phases\phase_4_3_vector_index\registry_urls.py
+            - ingest\prune_old_runs.py
+            - ingest\repo_dotenv.py
+            - ingest\url_registry\urls.yaml
+            - runtime\README.md
+            - runtime\__init__.py
+            - runtime\phase_5_retrieval\README.md
+            - runtime\phase_5_retrieval\__init__.py
+            - runtime\phase_5_retrieval\__main__.py
+            - runtime\phase_5_retrieval\chroma_access.py
+            - runtime\phase_5_retrieval\config.py
+            - runtime\phase_5_retrieval\embed_query.py
+            - runtime\phase_5_retrieval\pipeline.py
+            - runtime\phase_5_retrieval\preprocess.py
+            - runtime\phase_5_retrieval\retrieve.py
+            - runtime\phase_5_retrieval\types.py
+            - runtime\phase_6_generation\README.md
+            - runtime\phase_6_generation\__init__.py
+            - runtime\phase_6_generation\__main__.py
+            - runtime\phase_6_generation\allowlist.py
+            - runtime\phase_6_generation\config.py
+            - runtime\phase_6_generation\groq_llm.py
+            - runtime\phase_6_generation\pack_context.py
+            - runtime\phase_6_generation\pipeline.py
+            - runtime\phase_6_generation\prompts.py
+            - runtime\phase_6_generation\types.py
+            - runtime\phase_6_generation\validate_output.py
+            - runtime\phase_7_safety\README.md
+            - runtime\phase_7_safety\__init__.py
+            - runtime\phase_7_safety\__main__.py
+            - runtime\phase_7_safety\config.py
+            - runtime\phase_7_safety\pipeline.py
+            - runtime\phase_7_safety\post_validate.py
+            - runtime\phase_7_safety\privacy.py
+            - runtime\phase_7_safety\refusal.py
+            - runtime\phase_7_safety\router.py
+            - runtime\phase_7_safety\types.py
+            - runtime\phase_8_threads\__init__.py
+            - runtime\phase_8_threads\__main__.py
+            - runtime\phase_8_threads\chat_service.py
+            - runtime\phase_8_threads\config.py
+            - runtime\phase_8_threads\expand_query.py
+            - runtime\phase_8_threads\store.py
+            - runtime\phase_8_threads\store_memory.py
+            - runtime\phase_8_threads\store_sqlite.py
+            - runtime\phase_8_threads\types.py
+            - runtime\phase_9_api\__init__.py
+            - runtime\phase_9_api\__main__.py
+            - runtime\phase_9_api\app.py
+            - runtime\phase_9_api\config.py
+            - runtime\phase_9_api\schemas.py
+            - runtime\phase_9_api\test_api.py
+            - scripts\run-ingest-local.sh
+            - web\.env.local
+            - web\.env.local.example
+            - web\.gitignore
+            - web\README.md
+            - web\app\favicon.ico
+            - web\app\globals.css
+            - web\app\layout.tsx
+            - web\app\page.tsx
+            - web\components\ApiConfigBanner.tsx
+            - web\components\ChatApp.tsx
+            - web\components\ChatMainPanel.tsx
+            - web\components\ComposerForm.tsx
+            - web\components\DebugPanel.tsx
+            - web\components\DisclaimerBar.tsx
+            - web\components\HeaderBar.tsx
+            - web\components\MessageBubble.tsx
+            - web\components\PromptSuggestions.tsx
+            - web\components\SchemeSnapshot.tsx
+            - web\components\ThreadRail.tsx
+            - web\components\Toast.tsx
+            - web\eslint.config.mjs
+            - web\lib\api.ts
+            - web\lib\types.ts
+            - web\next-env.d.ts
+            - web\next.config.ts
+            - web\package-lock.json
+            - web\package.json
+            - web\postcss.config.mjs
+            - web\public\file.svg
+            - web\public\globe.svg
+            - web\public\next.svg
+            - web\public\vercel.svg
+            - web\public\window.svg
+            - web\tailwind.config.ts
+            - web\tsconfig.json
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    ingest:
+        dir_name: RAG Ingestion Pipeline
+        title: RAG Ingestion Pipeline
+        scope:
+            - ingest/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: runtime
+    runtime:
+        dir_name: RAG Query Runtime & API
+        title: RAG Query Runtime & API
+        scope:
+            - runtime/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: ingest
+            - path: web
+    web:
+        dir_name: Mutual Fund AI Chat Interface
+        title: Mutual Fund AI Chat Interface
+        scope:
+            - web/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: runtime

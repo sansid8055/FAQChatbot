@@ -1,0 +1,2 @@
+- Requires `NEXT_PUBLIC_API_URL` in `.env.local` pointing to the backend service (default `http://127.0.0.1:8765`).
+- Standard Next.js scripts: `npm run dev` for development, `npm run build` for production build.

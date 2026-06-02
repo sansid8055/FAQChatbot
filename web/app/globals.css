@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: 15 17 21;
+  --surface-raised: 24 27 35;
+  --surface-overlay: 32 36 46;
+  --ring-brand: 52 211 153;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  @apply min-h-dvh text-zinc-100 antialiased;
+  background-color: #0b0f0d;
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -30%, rgb(16 185 129 / 0.08), transparent 55%),
+    radial-gradient(ellipse 80% 50% at 100% 0%, rgb(5 150 105 / 0.05), transparent 45%);
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(63 63 70) transparent;
+  }
+}

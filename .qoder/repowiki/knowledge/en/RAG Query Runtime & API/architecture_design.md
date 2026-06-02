@@ -1,0 +1,4 @@
+- **Phased Pipeline Architecture**: The module is structured into sequential phases: `phase_5_retrieval` (Chroma vector search), `phase_6_generation` (Groq LLM interaction), `phase_7_safety` (intent routing and PII filtering), `phase_8_threads` (SQLite-backed conversation state), and `phase_9_api` (FastAPI HTTP layer).
+- **Orchestration Flow**: `phase_7_safety.pipeline.answer` serves as the core entry point for single-shot queries, delegating to retrieval and generation pipelines only after passing rule-based advisory checks and PII heuristics.
+- **State Management**: `phase_8_threads` provides a `chat_service` that wraps the safety pipeline with context expansion and per-thread locking, persisting interactions in SQLite (`store_sqlite.py`).
+- **API Boundary**: `phase_9_api.app` exposes REST endpoints for thread management and message posting, integrating the chat service and handling dependency errors (e.g., missing `groq` package) with specific HTTP status codes.

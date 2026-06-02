@@ -1,0 +1,1 @@
+Python 3.11+ (backend), Next.js/TypeScript (frontend), ChromaDB (shared vector store), Groq API (LLM inference), BAAI/bge-small-en-v1.5 (local embeddings).

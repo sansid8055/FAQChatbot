@@ -1,0 +1,1 @@
+Next.js 16 with React 19, TypeScript, Tailwind CSS for styling, and Lucide React for icons. Communicates with a Python FastAPI backend.

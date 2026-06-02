@@ -1,0 +1,3 @@
+- **Unified Ingestion**: `python -m ingest.phases.phase_4_0_scheduler_scraping` triggers the full scrape-to-index pipeline locally.
+- **Runtime API**: `python -m runtime.phase_9_api` boots the FastAPI backend on port 8765.
+- **Web Client**: `npm run dev` in the `web/` directory starts the Next.js UI, configured via `NEXT_PUBLIC_API_URL` to connect to the local runtime.

@@ -1,0 +1,3 @@
+- **Local Execution**: Run the full pipeline via `./scripts/run-ingest-local.sh` or individual phases using `python -m ingest.phases.phase_4_X_...`.
+- **Environment**: Requires copying `.env.example` to `.env` for optional overrides like `INGEST_USER_AGENT` or `HF_HOME`.
+- **Pruning**: Manually trigger cleanup with `python -m ingest.prune_old_runs` to remove outdated run directories and logs.

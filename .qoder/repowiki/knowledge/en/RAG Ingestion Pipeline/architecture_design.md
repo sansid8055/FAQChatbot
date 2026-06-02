@@ -1,0 +1,5 @@
+- **Phased Architecture**: The module is structured into four sequential sub-packages (`phase_4_0` to `phase_4_3`) representing scraping, normalization, chunking/embedding, and vector indexing.
+- **Entry Points**: Each phase exposes a `__main__.py` CLI entry point, orchestrated locally by `scripts/run-ingest-local.sh` or via GitHub Actions.
+- **Data Flow**: Data persists between phases in timestamped `run_id` directories under `data/raw`, `data/normalized`, and `data/chunked`, with manifests linking stages.
+- **Configuration**: Centralized environment variable handling via `repo_dotenv.py` and phase-specific `config.py` modules.
+- **Maintenance**: Includes `prune_old_runs.py` to manage storage by retaining only the latest successful run artifacts.

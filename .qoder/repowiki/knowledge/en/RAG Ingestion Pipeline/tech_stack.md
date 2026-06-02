@@ -1,0 +1,3 @@
+- **Embeddings**: Uses `sentence-transformers` with `BAAI/bge-small-en-v1.5` for local 384-dim vector generation.
+- **Vector Store**: Persists indices using `chromadb` in local persistent mode.
+- **Scraping**: Relies on `requests` for HTTP fetching and `PyYAML` for registry management.

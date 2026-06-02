@@ -1,0 +1,1 @@
+Orchestrates a multi-phase Retrieval-Augmented Generation pipeline with safety routing, thread persistence, and a FastAPI interface.

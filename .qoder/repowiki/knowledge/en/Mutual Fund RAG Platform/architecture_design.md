@@ -1,0 +1,4 @@
+- **Data-Plane Coupling**: The `ingest` and `runtime` modules share a local ChromaDB instance (`data/chroma/`) as their primary integration point, where ingestion upserts embeddings and the runtime performs read-only retrieval.
+- **Control-Plane Orchestration**: A GitHub Actions workflow (`.github/workflows/ingest.yml`) acts as the central scheduler, triggering the sequential execution of scraping, normalization, chunking, and indexing phases to ensure data freshness.
+- **Service Boundary**: The `runtime` module exposes a FastAPI service that serves as the backend for the `web` Next.js application, enforcing a strict separation between the AI pipeline (retrieval, generation, safety) and the user interface.
+- **Shared Configuration**: Environment variables (`.env`) and URL registries (`ingest/url_registry/urls.yaml`) are managed at the root level to maintain consistent source allowlists and API keys across ingestion and runtime contexts.
