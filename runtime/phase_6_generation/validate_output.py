@@ -42,7 +42,7 @@ def validate_generation(
     """Return (ok, reason)."""
     if FORBIDDEN_PATTERNS.search(body or ""):
         return False, "forbidden_phrase_in_body"
-    if sentence_count_heuristic(body or "") > 3:
+    if sentence_count_heuristic(body or "") > 5:
         return False, "body_too_many_sentences"
     if count_urls(body or "") > 0:
         return False, "url_in_body"

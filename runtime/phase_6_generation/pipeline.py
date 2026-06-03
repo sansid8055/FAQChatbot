@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import time
 from pathlib import Path
 
 from runtime.phase_5_retrieval.types import RetrievalResult
@@ -33,8 +34,8 @@ def _templated_fallback(
         url = sorted(allow)[0]
     footer = f"Last updated from sources: {footer_date}"
     body = (
-        "Refer to the indexed scheme page for facts from our sources "
-        "(an automated answer could not be validated)."
+        "I found relevant information in the indexed sources, but couldn't generate a validated concise answer. "
+        "Please refer to the official scheme document linked below for complete details."
     )
     return GenerationResult(
         body=body,
@@ -118,6 +119,7 @@ def generate(
 
     if not ok:
         logger.warning("First generation failed validation: %s", reason)
+        time.sleep(2)
         try:
             body2, cit2, foot2, raw2, model = call_llm(retry=True, validation_reason=reason)
             raw = raw + "\n--- retry ---\n" + raw2
